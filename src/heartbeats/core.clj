@@ -28,10 +28,9 @@
 (defn plot
   ([xs show?]
    (if (sequential? xs)
-     (do
-       (doseq [x xs]
-         (plot x false)))
-     (let [s (shape wave)]
+     (doseq [x xs]
+       (plot x false))
+     (let [s (shape xs)]
        (condp = (count s)
          1 (plt/plot xs)
          2 (doseq [x xs]
