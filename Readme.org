@@ -1,0 +1,4 @@
+Hello world sound analysis using clj-python for a heart beat clip.
+
+* Acknowledgments
+Sound effects obtained from https://www.zapsplat.com
